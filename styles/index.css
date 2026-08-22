@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --BODY-BG-COLOR: #f4f6f9;
+	--PRIMARY-COLOR: #1e293b;
+	--ACCENT-COLOR: #1e293b;
+	--STATUS-COLOR: #22c55e;
+}
+
+body{
+    background-color: var(--BODY-BG-COLOR);
+}
+
+nav{
+    background-color: var(--PRIMARY-COLOR);
+    color: var(--BODY-BG-COLOR);
+    height: 70px;
+    padding: 0px 10px 0px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav>div:last-child{
+    display: flex;
+}
+
+nav>div>p{
+    font-size: 1.2rem;
+    margin: 10px;
+}
