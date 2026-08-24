@@ -66,6 +66,10 @@ main>div:last-child{
     margin-bottom: 15px;
     border: 1px solid grey;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .status{
@@ -119,4 +123,47 @@ main>div>section>div{
 main>div>section>div>h3{
     display: flex;
     justify-content: center;
+}
+
+.first-project, .second-project{
+    height: 80px;
+    width: 90%;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+.first-project, .second-project{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title{
+    align-self: start;
+    margin-left:28px;
+}
+
+.first-project>section ,.second-project>section{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+main>div:last-child>div>section>p{
+    color: rgb(125, 127, 127)
+}
+
+main>div:last-child>div>div{
+    height: 25px;
+    width: 90px;
+    background-color: whitesmoke;
+    color: blue;
+    border: 1px solid rgba(0, 0, 255, 0.3);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    font-size: 0.9rem;
 }
