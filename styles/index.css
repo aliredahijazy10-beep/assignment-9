@@ -13,6 +13,7 @@
 
 body{
     background-color: var(--BODY-BG-COLOR);
+    min-height: 100vh;
 }
 
 nav{
@@ -33,4 +34,89 @@ nav>div:last-child{
 nav>div>p{
     font-size: 1.2rem;
     margin: 10px;
+}
+
+main{
+    color: var(--ACCENT-COLOR);
+    height: 85vh;
+    gap: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+main>div:first-child{
+    height: 270px;
+    width: 350px;
+    background-color: white;
+    border: 2px solid grey;
+    border-radius: 10px;
+    box-shadow: 0 0px 5px rgba(128, 128, 128, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+main>div:last-child{
+    height: 255px;
+    width: 550px;
+    background-color: white;
+    margin-bottom: 15px;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+.status{
+    background-color: var(--STATUS-COLOR);
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    align-self: end;
+    margin: 20px 20px 0px 0px;
+}
+
+.image{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 3px solid blue;
+    overflow: hidden;
+}
+
+.image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.name{
+    margin-top: 10px;
+}
+
+.level{
+    color: rgb(135, 127, 127);
+    margin-bottom: 20px;
+}
+
+main>div>section{
+    height: 13vh;
+    width: 90%;
+    background-color: white;
+    border-top: 1px solid grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+main>div>section>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main>div>section>div>h3{
+    display: flex;
+    justify-content: center;
 }
